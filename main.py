@@ -15,7 +15,7 @@ output_name = ""
 sentences_list = []
 empty_pages = set()
 file_names = os.listdir(folder_path)
-file_names = [file_name for file_name in file_names if file_name.lower().endswith(".pdf")]
+file_names = [file_name for file_name in file_names if file_name.endswith(".pdf")]
 for file_name in file_names:
     pdf_submission = PyPDF2.PdfReader(os.join(folder_path, file_name))
     for page in pdf_submission.pages:
