@@ -1,10 +1,9 @@
-fimport nltk
+import nltk
 import os 
 import PyPDF2
 import pandas
 
 # ___________________________________
-# import nltk
 # nltk.download('punkt')
 # ___________________________________
 
